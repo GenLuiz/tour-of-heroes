@@ -14,7 +14,8 @@ import { HeroComponent } from './hero/hero.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
-import { HeroService } from './hero-service/hero-service';
+import { HeroService } from './hero-service/hero.service';
+import { HeroSearchComponent } from './hero-search/hero-search.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HeroService } from './hero-service/hero-service';
     AppComponent,
     HeroComponent,
     DashboardComponent,
-    HeroListComponent
+    HeroListComponent,
+    HeroSearchComponent
   ],
   imports: [
     FormsModule,
