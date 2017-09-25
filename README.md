@@ -5,8 +5,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 # Info 
 This project is a simple example of angular in action with basic features.
 
-##How to run the application
-clone or download the zip, then on cmd(terminal) run 'npm install', after installation run 'ng serve -o'
+## How to run the application
+clone or download the zip, then on cmd(terminal) run 'npm install', after installation run 'ng serve -o'.
 
 ## Development server
 
