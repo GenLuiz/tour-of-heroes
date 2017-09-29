@@ -1,25 +1,17 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HeroService } from './../hero-service/hero.service';
 import { DashboardComponent } from './dashboard.component';
 
-describe('DashboardComponent', () => {
+fdescribe('DashboardComponent', () => {
   let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
-
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
-    })
-    .compileComponents();
-  }));
+  let heroService : HeroService;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    component = new DashboardComponent(heroService);
+    component.ngOnInit();
   });
 
-  it('should be created', () => {
-    expect(component).toBeTruthy();
+
+  it('should be created title', () => {
+    expect(component.title).toBeDefined()
   });
 });

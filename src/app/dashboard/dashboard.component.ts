@@ -8,7 +8,7 @@ import { HeroService } from '../hero-service/hero.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
-
+  title: string = "Top Heroes";
   heroes: Hero[] = [];
   constructor(private heroService:HeroService) {}
 
